@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Material Crash Course</title>
+  <link rel="stylesheet" href="./materialize.css">
+
+  <!--Import Google Icon Font-->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <style>
+    .colors-container h5 {
+      padding: 10px;
+    }
+
+    .box {
+      height: 200px;
+    }
+
+    .shade {
+      height: 80px;
+      /* width: 50px; */
+    }
+
+    nav .badge {
+      position: relative;
+      top: 20px;
+      right: 20px;
+    }
+  </style>
+</head>
+
+<body>
+  <h1>Materialize CSS</h1>
+  <div class="container">
+    <h4 class="center-align teal accent-4">BASIC TEXT STYLES</h4>
+    <p>hello world</p>
+    <h1>Hey ninjas!</h1>
+    <h2>h2 title</h2>
+    <h3>h3 title</h3>
+    <h4>h4 title</h4>
+    <h5>h5 title</h5>
+    <h6>h6 title</h6>
+    <p class="flow-text">this is flow text</p>
+  </div>
+
+  <div class="container">
+    <h4 class="center-align teal accent-4">HIDING/UNHINDING ELEMENTS</h4>
+    <h4 class="hide"> Hide me on all screen sizes</h4>
+    <h4 class="hide-on-small-only"> Hide me on small screen sizes</h4>
+    <h4 class="hide-on-med-only"> Hide me on medium screen sizes</h4>
+    <h4 class="hide-on-large-only"> Hide me on large screen sizes</h4>
+    <h4 class="hide-on-med-and-down"> Hide me on medium & small screen sizes</h4>
+    <h4 class="hide-on-med-and-up"> Hide me on medium & large screen sizes</h4>
+  </div>
+
+
+  <div class="container colors-container">
+    <h4 class="center-align teal accent-4">COLORS</h4>
+    <h5 class="blue darken-1">Be yourself, everyone else is already taken</h5>
+    <h5 class="orange lighten-4">We are all in the gutter, but some of us are looking at the stars</h5>
+    <h5 class="purple darken-3 white-text">To live is the rarest thing in the world. Most people exist, that is all</h5>
+    <h5 class="teal darken-2 yellow-text text-lighten-3">Experience is simply the name we give our mistakes</h5>
+    <h5 class="yellow lighten-3 purple-text text-darken-2">Always forgive your enemeise - nothing annoys them so much
+    </h5>
+    <div class="" style="padding: 10px;">
+      <nav>
+        <div class="nav-wrapper deep-purple accent-4">
+          <a href="#" class="brand-logo">Logo</a>
+          <ul id="nav-mobile" class="right hide-on-med-and-down">
+            <li><a href="#">Sass</a></li>
+            <li><a href="#">Components</a></li>
+            <li><a href="#">JavaScript</a></li>
+          </ul>
+        </div>
+      </nav>
+      <p>hello</p>
+      <a class="btn-floating btn-large waves-effect waves-light deep-purple accent-4"><i
+          class="material-icons">add</i></a>
+    </div>
+  </div>
+
+  <div class="container">
+    <h4 class="center-align teal accent-4">TEXT FORMATTING</h4>
+    <h5 class="center-align">Center alignment</h5>
+    <h5 class="left-align">Left alignment</h5>
+    <h5 class="right-align">Right alignment</h5>
+  </div>
+
+  <div class="container grey lighten-2 box valign-wrapper">
+    <h5 class="">Vertical alignment</h5>
+  </div>
+
+  <div class="container">
+    <p class="truncate">Lorem ipsum dolor sit amet consectetur adipisicing elit. Non neque, eum repudiandae quas
+      corporis esse facere, quasi rerum reprehenderit laboriosam alias saepe nulla expedita voluptates nam et modi
+      dignissimos earum?</p>
+  </div>
+
+  <div class="container">
+    <h4 class="center-align teal accent-4">BUTTONS</h4>
+    <a class="btn waves-effect waves-dark">Normal button</a>
+    <a href="#" class="btn-small">Small button</a>
+    <a href="#" class="btn-large">Large button</a>
+    <a class="btn indigo waves-effect waves-light">Indigo button</a>
+    <a href="#" class="btn disabled">Disabled button</a>
+    <p class="flow-text">Floating button</p>
+    <a href="#" class="btn-floating pink pulse"></a>
+    <p class="flow-text">Other elements</p>
+    <div class="btn light-green accent-3">I am a div tag</div>
+    <div class="btn-floating light-green accent-4 pulse"></div>
+  </div>
+
+  <div class="container">
+    <h4 class="center-align teal accent-4">ICONS</h4>
+    <p class="flow-text">icons</p>
+    <i class="material-icons red-text">error</i>
+    <i class="material-icons yellow-text text-darken-2">warning</i>
+    <i class="material-icons grey-text text-darken-2">cloud</i>
+    <i class="material-icons blue-text lighten-2">call</i>
+    <i class="material-icons blue-text">folder</i>
+    <i class="material-icons blue-text text-darken-1">verified</i>
+
+    <p class="flow-text">icons on buttons</p>
+    <a class="btn deep-purple accent-4">Send<i class="material-icons right">send</i></a>
+    <a class="btn pink waves-effect">Email<i class="material-icons left">email</i></a>
+
+    <p class="flow-text">icons on floating button</p>
+    <a class="btn-floating waves-effect teal"><i class="material-icons">delete</i></a>
+    <a class="btn-floating pulse red"><i class="material-icons">add</i></a>
+    <a class="btn-floating deep-purple accent-4"><i class="material-icons">remove</i></a>
+    <a class="btn-floating blue"><i class="material-icons">send</i></a>
+    <a class="btn-floating grey darken-3"><i class="material-icons">settings</i></a>
+    <a class="btn-floating green accent-4"><i class="material-icons">edit</i></a>
+
+    <h4 class="center-align teal accent-4">GRID</h4>
+    <div class="row">
+      <div class="col s6 m3 deep-purple accent-4 white-text">content</div>
+      <div class="col s6 m3 deep-purple accent-4 white-text">content</div>
+      <div class="col s6 m3 teal accent-4">content</div>
+      <div class="col s6 m3 teal accent-4">content</div>
+    </div>
+    <div class="row">
+      <div class="col s12 m6 l3 red lighten-1 center-align">large content</div>
+      <div class="col s12 m6 l3 pink lighten-1 center-align">large content</div>
+      <div class="col s6 m6 l3 blue lighten-3">small content</div>
+      <div class="col s6 m6 l3 light-blue accent-1">small content</div>
+    </div>
+    <div class="row">
+      <div class="col s12 m6 l4 xl2 blue lighten-3">small content</div>
+      <div class="col s12 m6 l4 xl2 blue lighten-3">small content</div>
+      <div class="col s12 m6 l4 xl2 blue lighten-3">small content</div>
+      <div class="col s12 m6 l4 xl2 blue lighten-3">small content</div>
+      <div class="col s12 m6 l4 xl2 blue lighten-3">small content</div>
+      <div class="col s12 m6 l4 xl2 blue lighten-3">small content</div>
+    </div>
+    <div class="row">
+      <div class="col s12 m8 blue">small content</div>
+      <div class="col s12 m4 orange">small content</div>
+      <div class="col s12 m4 green">small content</div>
+      <div class="col s12 m8 pink">small content</div>
+    </div>
+
+    <h4 class="center-align deep-purple accent-4">DEPTH & SHADOWS</h4>
+    <div class="row">
+      <div class="col s2">
+        <div class=" shade cyan accent-3"></div>
+      </div>
+      <div class="col s2">
+        <div class="z-depth-1 shade cyan accent-3"></div>
+      </div>
+      <div class="col s2">
+        <div class="z-depth-2 shade cyan accent-3"></div>
+      </div>
+      <div class="col s2">
+        <div class="z-depth-3 shade cyan accent-3"></div>
+      </div>
+      <div class="col s2">
+        <div class="z-depth-4 shade cyan accent-3"></div>
+      </div>
+      <div class="col s2">
+        <div class="z-depth-5 shade cyan accent-3"></div>
+      </div>
+    </div>
+
+  </div> <!-- ./container -->
+
+  <h4 class="center-align teal accent-4">NAVBAR</h4>
+  <nav class="nav-wrapper indigo">
+    <div class="container">
+      <a href="" class="brand-logo">DROID</a>
+      <a href="#" id="hamburger" class="sidenav-trigger" data-target="mobile-links"><i
+          class="material-icons">menu</i></a>
+      <ul class="right hide-on-med-and-down">
+        <li><a href="">Home <span class="badge">50</span></a></li>
+        <li><a href="">Message</a></li>
+        <li><a href="">Contact</a></li>
+        <li>
+          <a href="" class="btn-floating indigo darken-4 z-depth-0">
+            <i class="material-icons left">person</i>
+          </a>
+        <li><span class="new badge white-text pink">4</span></li>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  <ul class="sidenav" id="mobile-links">
+    <li><a href="">Home</a></li>
+    <li><a href="">Message</a></li>
+    <li><a href="">Contact</a></li>
+    <li><a href="">Profile <span class="new badge white-text pink">4</span></a></li>
+  </ul>
+
+  <div class="container">
+    <h4 class="center-align teal accent-4">CARDS</h4>
+    <div class="row">
+      <div class="col s12 m6">
+        <div class="card teal accent-4">
+          <div class="card-content white-text">
+            <span class="card-title">Hello World</span>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit, minus? Distinctio reiciendis illum atque,
+              hic explicabo voluptates tempore minus obcaecati repellendus enim maiores modi, commodi reprehenderit
+              aliquam. Nam esse ipsa illum distinctio eligendi, excepturi ab! Odio earum illum est, iusto reprehenderit
+              sunt esse alias in expedita. Similique asperiores aliquid ipsam.</p>
+            <div class="card-action">
+              <button class="btn teal accent-5 z-depth-0 right">Continue</button>
+              <br>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col s12 m6">
+        <div class="card deep-purple accent-4">
+          <div class="card-content white-text">
+            <span class="card-title">Another World</span>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore magni sunt consequuntur facere ipsam!
+              Nam suscipit voluptatum labore hic ex obcaecati laborum voluptatibus officia pariatur ea tenetur unde
+              totam, illum qui mollitia ut. Odit eius quasi nulla neque ipsam omnis, vel, esse veritatis voluptas, id
+              amet nostrum libero veniam nemo.</p>
+            <div class="card-action">
+              <div class="row">
+                <div class="col s6">
+                  <button class="btn deep-purple accent-5 right">Cancel</button>
+                </div>
+                <div class="col s6">
+                  <button class="btn deep-purple accent-2 right">Continue</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col s6">
+        <div class="card orange z-depth-3">
+          <div class="card-image">
+            <img
+              src="https://s3-eu-west-1.amazonaws.com/s3-gousto-production-media/cms/mood-image/2759_Paneer--Mango-Salad-With-Crispy-Chickpeas-1331-1593512988650.jpg"
+              alt="">
+            <span class="card-title">Tremendous Recipe<span class="badge teal white-text" style="border-radius: 2px; scale: 0.8;">Expert Reviewed</span></span>
+            </div>
+            <div class="card-content">
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam, cupiditate in magnam unde facilis suscipit minima corrupti ducimus dolorem sunt doloribus dolor eligendi eos beatae libero aut laboriosam minus sint similique aspernatur temporibus recusandae iusto id. Fugit unde accusamus illo porro. Repellendus fugiat nemo impedit expedita, enim ea. Nesciunt, sequi architecto error tempore recusandae dolores ut consectetur enim, hic qui quia reiciendis praesentium nam illum nisi obcaecati. Obcaecati temporibus nam alias quibusdam iste, repudiandae libero expedita molestias voluptatibus exercitationem? Ea magnam consequuntur illum commodi, eligendi architecto esse qui soluta minima, dicta animi, iste neque eius cupiditate dolore. Facilis, quae reiciendis!</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div> <!-- ./container -->
+
+
+
+  <script src="./materialize.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      var elems = document.querySelectorAll('.sidenav');
+      // ***NOTE***: Optional options, are passed as the 2nd argument as an object
+      var instances = M.Sidenav.init(elems, { inDuration: 400 });
+    });
+  </script>
+</body>
+
+</html>
