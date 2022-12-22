@@ -260,30 +260,114 @@
             <img
               src="https://s3-eu-west-1.amazonaws.com/s3-gousto-production-media/cms/mood-image/2759_Paneer--Mango-Salad-With-Crispy-Chickpeas-1331-1593512988650.jpg"
               alt="">
-              <a href="" class="btn-floating yellow halfway-fab"><i class="material-icons pink">favorite</i></a>
-            <span class="card-title">Tremendous Recipe<span class="badge teal white-text" style="border-radius: 2px; scale: 0.8;">Expert Reviewed</span></span>
-            
-            </div>
-            <div class="card-content">
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam, cupiditate in magnam unde facilis suscipit minima corrupti ducimus dolorem sunt doloribus dolor eligendi eos beatae libero aut laboriosam minus sint similique aspernatur temporibus recusandae iusto id. Fugit unde accusamus illo porro. Repellendus fugiat nemo impedit expedita, enim ea. Nesciunt, sequi architecto error tempore recusandae dolores ut consectetur enim, hic qui quia reiciendis praesentium nam illum nisi obcaecati. Obcaecati temporibus nam alias quibusdam iste, repudiandae libero expedita molestias voluptatibus exercitationem? Ea magnam consequuntur illum commodi, eligendi architecto esse qui soluta minima, dicta animi, iste neque eius cupiditate dolore. Facilis, quae reiciendis!</p>
-              
-            </div>
+            <a href="" class="btn-floating yellow halfway-fab"><i class="material-icons pink">favorite</i></a>
+            <span class="card-title">Tremendous Recipe<span class="badge teal white-text"
+                style="border-radius: 2px; scale: 0.8;">Expert Reviewed</span></span>
+
+          </div>
+          <div class="card-content">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam, cupiditate in magnam unde facilis
+              suscipit minima corrupti ducimus dolorem sunt doloribus dolor eligendi eos beatae libero aut laboriosam
+              minus sint similique aspernatur temporibus recusandae iusto id. Fugit unde accusamus illo porro.
+              Repellendus fugiat nemo impedit expedita, enim ea. Nesciunt, sequi architecto error tempore recusandae
+              dolores ut consectetur enim, hic qui quia reiciendis praesentium nam illum nisi obcaecati. Obcaecati
+              temporibus nam alias quibusdam iste, repudiandae libero expedita molestias voluptatibus exercitationem? Ea
+              magnam consequuntur illum commodi, eligendi architecto esse qui soluta minima, dicta animi, iste neque
+              eius cupiditate dolore. Facilis, quae reiciendis!</p>
+
           </div>
         </div>
       </div>
     </div>
   </div>
+  </div>
+
+  <div class="container">
+
+  <h4 class="center-align teal accent-4">COLLECTIONS</h4>
+  <div class="row">
+    <div class="col s6">
+      <ul class="collection">
+        <li class="collection-item avatar">
+          <i class="material-icons circle yellow black-text"><p class="flow-text">javascript</p></i>
+          <span class="title">Javascript</span>
+          <p>Javascript is da best</p>
+          <p>Language in da entire world</p>
+          <a href="#!" class="secondary-content"><i class="material-icons blue-text">expand_more</i></a>
+        </li>
+        <li class="collection-item avatar">
+          <i class="material-icons circle pink"><p class="flow-text">html</p></i>
+          <span class="title">HTML</span>
+          <p>HTML is another great pRoGraMmIng LanGuAgE</p>
+          <p>we need a expert html developer</p>
+          <a href="#!" class="secondary-content"><i class="material-icons black-text">code</i></a>
+        </li>
+        <li class="collection-item avatar">
+          <i class="material-icons circle blue"><p class="flow-text">css</p></i>
+          <span class="title">Cascading Style Cheat</span>
+          <p>Programming language used to make</p>
+          <p>things beautiful</p>
+          <a href="#!" class="secondary-content"><i class="material-icons red-text">add_circle</i></a>
+        </li>
+      </ul>
+    </div>
+    <div class="col s6">
+      <div class="collection">
+        <a href="#!" class="collection-item">Item 1</a>
+        <a href="#!" class="collection-item">Item 2</a>
+        <a href="#!" class="collection-item">Item 3</a>
+        <a href="#!" class="collection-item">Item 4</a>
+        <a href="#!" class="collection-item">Item 5</a>
+      </div>
+    </div>
+  </div>
+
+
+
+  <h4 class="center-align teal accent-4">MODALS</h4>
+  <a href="#modal1" class="btn waves-effect waves-light modal-trigger">Open Modal</a>
+
+  <div id="modal1" class="modal modal-fixed-footer">
+    <div class="modal-content">
+      <h4>I am home <i class="material-icons">home</i></h4>
+      <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nostrum, dignissimos?</p>
+    </div>
+    <div class="modal-footer">
+      <a href="#!" class="modal-close btn-flat">Agree</a>
+    </div>
+  </div>
+
   </div> <!-- ./container -->
+
 
 
 
   <script src="./materialize.js"></script>
   <script>
+    // Navbar Toggle / mobile menu / Hamburger Menu
     document.addEventListener('DOMContentLoaded', function () {
       var elems = document.querySelectorAll('.sidenav');
       // ***NOTE***: Optional options, are passed as the 2nd argument as an object
       var instances = M.Sidenav.init(elems, { inDuration: 400 });
     });
+
+    // Only one Collection Item can be selected, others get Deselected
+    const collectionItems = document.querySelectorAll('.collection-item')
+    collectionItems.forEach(item => {
+      item.addEventListener('click', () => {
+        collectionItems.forEach(otherItem => {
+          otherItem.classList.remove('active')
+        })
+        item.classList.add('active')
+      })
+    })
+    
+    // Opening and closing of Modal
+    document.addEventListener('DOMContentLoaded', function() {
+      const modals = document.querySelectorAll('.modal')
+      const instances = M.Modal.init(modals)
+      console.log(instances)
+    })
   </script>
 </body>
 
