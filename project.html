@@ -27,23 +27,34 @@
         <a data-target="mobile-menu" href="" class="sidenav-trigger">
           <i class="material-icons">menu</i>
         </a>
+        <!-- for desktop -->
         <a href="#" class="brand-logo">Photo Droid</a>
         <ul class="right hide-on-med-and-down">
-          <li><a href="#">Photo's</a></li>
-          <li><a href="#">Services</a></li>
-          <li><a href="#">Contact</a></li>
+          <li><a href="#photos">Photo's</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <li><a href="#!" class="tooltipped btn-floating btn-small indigo darken-4" data-tooltip="Instagram">
+            <i class="fab fa-instagram"></i>
+          </a></li>
+          <li><a href="#!" class="tooltipped btn-floating btn-small indigo darken-4" data-tooltip="Facebook">
+            <i class="fab fa-facebook"></i>
+          </a></li>
+          <li><a href="#!" class="tooltipped btn-floating btn-small indigo darken-4" data-tooltip="Twitter">
+            <i class="fab fa-twitter"></i>
+          </a></li>
         </ul>
+        <!-- for mobile -->
         <ul id="mobile-menu" class="sidenav grey lighten-2">
-          <li><a href="#">Photo's</a></li>
-          <li><a href="#">Services</a></li>
-          <li><a href="#">Contact</a></li>
+          <li><a href="#photos">Photos</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#contact">Contact</a></li>
         </ul>
       </div>
     </nav>
   </header>
 
   <!-- PHOTOS SECTION -->
-  <section class="section container" id="photos">
+  <section class="section container scrollspy" id="photos">
     <div class="row">
       <div class="col s12 l4">
         <img src="./project-img/portrait.jpg" alt="" srcset="" class="responsive-img materialboxed">
@@ -84,7 +95,7 @@
   </div>
 
   <!-- SERVICES / TABS -->
-  <section class="container section" id="services">
+  <section class="container section scrollspy" id="services">
     <div class="row">
       <div class="col s12 l4">
         <h2 class="indigo-text text-darken-4">What I do...</h2>
@@ -128,7 +139,7 @@
   </div>
 
   <!-- CONTACT FORM -->
-  <section class="section container" id="contact">
+  <section class="section container scrollspy" id="contact">
     <div class="row">
       <div class="col s12 l5">
         <h2 class="indigo-text text-darken-4">Get In Touch</h2>
@@ -190,8 +201,19 @@
           <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minima totam maiores vero iste! Nesciunt eius voluptate doloribus et eum sapiente.</p>
         </div>
         <div class="col s12 l4 offset-l2">
-          
+          <h5>Connect</h5>
+          <ul>
+            <li><a href="#!" class="grey-text text-lighten-3">Facebook</a></li>
+            <li><a href="#!" class="grey-text text-lighten-3">Twitter</a></li>
+            <li><a href="#!" class="grey-text text-lighten-3">LinkedIn</a></li>
+            <li><a href="#!" class="grey-text text-lighten-3">Instagram</a></li>
+          </ul>
         </div>
+      </div>
+    </div>
+    <div class="footer-copyright grey darken-4">
+      <div class="container center-align">
+        <p class=""><i class="material-icons" style="position: relative; top: 6px;">closed_caption</i> No Rights Reserved 2022.</p>
       </div>
     </div>
   </footer>
