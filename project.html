@@ -11,7 +11,9 @@
   <!-- Compiled and minified CSS -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
   <!-- Font Awesome -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+    integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
   <!-- My Custom CSS -->
   <link rel="stylesheet" href="./project.css">
 </head>
@@ -19,6 +21,7 @@
 <body>
 
   <header>
+    <!-- NAVBAR -->
     <nav class="nav-wrapper transparent">
       <div class="container">
         <a data-target="mobile-menu" href="" class="sidenav-trigger">
@@ -39,9 +42,146 @@
     </nav>
   </header>
 
+  <!-- PHOTOS SECTION -->
   <section class="section container" id="photos">
-    <div class="row"></div>
+    <div class="row">
+      <div class="col s12 l4">
+        <img src="./project-img/portrait.jpg" alt="" srcset="" class="responsive-img materialboxed">
+      </div>
+      <div class="col s12 l6 offset-l1">
+        <h2 class="indigo-text darken-4">Portraits</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia laborum minus labore corporis sit, suscipit
+          iste praesentium pariatur obcaecati error.</p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col s12 l4 push-l7 offset-l1">
+        <img src="./project-img/city.jpg" alt="" srcset="" class="responsive-img materialboxed">
+      </div>
+      <div class="col s12 l6 pull-l5 right-align offset-l1">
+        <h2 class="indigo-text darken-4">Cityscapes</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia laborum minus labore corporis sit, suscipit
+          iste praesentium pariatur obcaecati error.</p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col s12 l4 o">
+        <img src="./project-img/nature.jpg" alt="" srcset="" class="responsive-img materialboxed">
+      </div>
+      <div class="col s12 l6 offset-l1">
+        <h2 class="indigo-text darken-4">Nature</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia laborum minus labore corporis sit, suscipit
+          iste praesentium pariatur obcaecati error.</p>
+      </div>
+    </div>
   </section>
+
+  <!-- PARALLAX -->
+  <div class="parallax-container">
+    <div class="parallax">
+      <img src="./project-img/street.jpg" alt="" srcset="" class="responsive-img">
+    </div>
+  </div>
+
+  <!-- SERVICES / TABS -->
+  <section class="container section" id="services">
+    <div class="row">
+      <div class="col s12 l4">
+        <h2 class="indigo-text text-darken-4">What I do...</h2>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quidem alias omnis illum iusto corrupti qui ipsa
+          sunt nulla commodi odio.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa obcaecati officiis nesciunt beatae, cumque
+          saepe inventore quaerat minus qui provident.</p>
+      </div>
+      <div class="col s12 l6 offset-l2">
+        <ul class="tabs">
+          <li class="tab col s6">
+            <a href="#photography" class="indigo-text text-darken-4">Photography</a>
+          </li>
+          <li class="tab col s6">
+            <a href="#editing" class="indigo-text text-darken-4">Editing</a>
+          </li>
+        </ul>
+        <div class="col s12" id="photography">
+          <p class="flow-text indigo-text text-darken-4">PHOTOGRAPHY</p>
+          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facilis a quas velit est neque commodi itaque
+            officia consequatur repudiandae ipsa.</p>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi cum eius recusandae quod, reprehenderit aut
+            neque beatae culpa eligendi asperiores.</p>
+        </div>
+        <div class="col s12" id="editing">
+          <p class="flow-text indigo-text text-darken-4">EDITING</p>
+          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facilis a quas velit est neque commodi itaque
+            officia consequatur repudiandae ipsa.</p>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi cum eius recusandae quod, reprehenderit aut
+            neque beatae culpa eligendi asperiores.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PARALLAX -->
+  <div class="parallax-container">
+    <div class="parallax">
+      <img src="./project-img/star.jpg" alt="" srcset="" class="responsive-img">
+    </div>
+  </div>
+
+  <!-- CONTACT FORM -->
+  <section class="section container" id="contact">
+    <div class="row">
+      <div class="col s12 l5">
+        <h2 class="indigo-text text-darken-4">Get In Touch</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus sunt id incidunt, tempora vel distinctio?
+          Magnam reprehenderit veniam quasi nihil.</p>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Beatae odio nesciunt aspernatur id adipisci nostrum
+          iste magni et a rerum?</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae quasi perspiciatis minus dignissimos,
+          nesciunt nisi itaque accusamus ipsa beatae ad!</p>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptate neque enim quis tempora temporibus earum
+          repudiandae voluptas dolorum nihil in.</p>
+      </div>
+      <div class="col s12 l5 offset-l2">
+        <form action="">
+          <div class="input-field">
+            <i class="material-icons prefix">email</i>
+            <input type="email" name="" id="email">
+            <label for="email">Your email</label>
+          </div>
+          <div class="input-field">
+            <i class="material-icons prefix">message</i>
+            <textarea class="materialize-textarea" id="message"></textarea>
+            <label for="message">Your Message</label>
+          </div>
+          <div class="input-field">
+            <input type="text" id="date" class="datepicker">
+            <label for="date">Choose a date you need me for...</label>
+          </div>
+          <div class="input-field">
+            <p>Services Required...</p>
+            <p>
+              <label>
+                <input type="checkbox" name="" id="">
+                <span>Photography</span>
+              </label>
+            </p>
+            <p>
+              <label>
+                <input type="checkbox" name="" id="">
+                <span>Editing</span>
+              </label>
+            </p>
+          </div>
+          <div class="input-field center">
+            <button class="btn">Submit</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  
 
 
   <!-- Compiled and minified JavaScript -->
